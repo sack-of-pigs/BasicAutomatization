@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
     public void testRemain_AmountEqualToBoundary() {
         int amount = 1000;
         int actual = service.remain(amount);
-        int expected = 0; // 1000 - 1000 % 1000 = 1000 - 0 = 1000
+        int expected = 0; // 1000 - 1000 % 1000 = 1000 - 0 = 1000, но на границе remain должен возвращать 0
         Assert.assertEquals(expected, actual);
     }
 
